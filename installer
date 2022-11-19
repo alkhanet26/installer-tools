@@ -33,7 +33,7 @@ if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "Memasang Custom Repo"
 sleep 2
 clear
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/tree/main/plite/cfeed.sh" -O /tmp/cfeed.sh && chmod +x /tmp/cfeed.sh && cd /tmp/sh cfeed.sh && rm /tmp/cfeed.sh
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/tree/main/plite/cfeed.sh" -O /tmp/cfeed.sh && chmod +x /tmp/cfeed.sh && cd /tmp/ && sh cfeed.sh && rm /tmp/cfeed.sh
 sleep 2
 else
 clear
