@@ -6,7 +6,7 @@
    ```
 2. Jalankan installer dengan ketik command dibawah
    ```
-   cd /tmp && installer
+   cd /tmp && sh installer
 3. Pilih dulu script repo untuk dengan mengetik ``in1``
 ```
 **     SELAMAT DATANG ISNTALLER PASSWALL LITE       **
