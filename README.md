@@ -6,7 +6,7 @@
    ```
 2. Jalankan installer dengan ketik command dibawah
    ```
-   inpass
+   sh inpass
    ```
 3. Pilih dulu script repo untuk dengan mengetik ``in1``
 ```
@@ -25,7 +25,7 @@
 ```
 4. Kemudian pilih sesuai arch device yang di pakai contoh saya pakai untuk Mi4A GE rom 16MB pilih ``16MB MIPSEL_24KC``
    ```
-   inpass 2
+   sh inpass 2
    ```
 5. Tunggu sampai Proses installasi selesai
 
