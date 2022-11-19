@@ -6,7 +6,7 @@
    ```
 2. Jalankan installer dengan ketik command dibawah
    ```
-   sh inpass
+   cd /tmp && sh inpass
    ```
 3. Pilih dulu script repo untuk dengan mengetik ``in1``
 ```
