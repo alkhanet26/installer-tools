@@ -23,7 +23,11 @@
 ******************************************************
 **        INSTALLER PASSWALL LITE BY ALKHANET       **
 ```
-4. Kemudian pilih sesuai arch device yang di pakai contoh saya pakai untuk Mi4A GE rom 16MB pilih ``16MB MIPSEL_24KC``
+4. Pasang dulu ``Custom Repo`` untuk menginstall paket pendukung ``Passwall Lite``
+   ```
+   sh inpass 1
+   ```
+5. Kemudian pilih sesuai arch device yang di pakai contoh saya pakai untuk Mi4A GE rom 16MB pilih ``16MB MIPSEL_24KC``
    ```
    sh inpass 2
    ```
