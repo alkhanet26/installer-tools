@@ -68,27 +68,7 @@ exit
 fi
 }
 echo -e "$Y"
-PLite_Mipsel_24kc(){
-read -p "Install Passwall Lite, Anda Yakin? (y/n) : " an
-if [[ $an == "y" || $an == "Y" ]]; then
-echo -e "Mulai installasi Passwall lite"
-sleep 2
-clear
-opkg remove dnsmasq && opkg update && opkg install dnsmasq-full ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat luci-compat xray-core trojan-go
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/luci-app-passwall_lite_all.ipk" -O /tmp/luci-app-passwall_lite_all.ipk && chmod +x /tmp/luci-app-passwall_lite_all.ipk && cd /tmp && opkg update && opkg install *.ipk && rm /tmp/luci-app-passwall_lite_all.ipk
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/status.htm"  -O /usr/lib/lua/luci/view/passwall/global/status.htm && chmod +x /usr/lib/lua/luci/view/passwall/global/status.htm
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/passwall.lua" -O /usr/lib/lua/luci/controller/passwall.lua && chmod +x /usr/lib/lua/luci/controller/passwall.lua
-sleep 2
-else
-clear
-echo -e "kembali ke halaman awal..."
-sleep 2
-clear
-exit
-fi
-}
-echo -e "$Y"
-Plite_stb_s905x(){
+PLite_All(){
 read -p "Install Passwall Lite, Anda Yakin? (y/n) : " an
 if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "Mulai installasi Passwall lite"
@@ -121,8 +101,7 @@ echo -e "$DB ******************************************************"
 echo -e "$DB **$G        DAFTAR :                    *  PERINTAH : $DB**"
 echo -e "$DB **$G SCRIPT REPO                        * sh inpass 1 $DB**"
 echo -e "$DB **$G INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2 $DB**"
-echo -e "$DB **$G INSTALL PASSWALL >32MB MIPSEL_24KC * sh inpass 3 $DB**"
-echo -e "$DB **$G INSTALL PASSWALL STB AMLOGIC       * sh inpass 4 $DB**"
+echo -e "$DB **$G INSTALL PASSWALL ALL ARCH          * sh inpass 3 $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y      INSTALLER PASSWALL LITE BY ALKHANET         $DB**"
 echo -e "$DB ******************************************************"
@@ -144,13 +123,7 @@ esac
 
 case $1 in
 "3")
-PLite_Mipsel_24kc;exit
-;;
-esac
-
-case $1 in
-"4")
-Plite_stb_s905x;exit
+PLite_All;exit
 ;;
 esac
 
@@ -167,8 +140,7 @@ echo -e "$DB ******************************************************"
 echo -e "$DB **$G        DAFTAR :                    *  PERINTAH : $DB**"
 echo -e "$DB **$G SCRIPT REPO                        * sh inpass 1 $DB**"
 echo -e "$DB **$G INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2 $DB**"
-echo -e "$DB **$G INSTALL PASSWALL >32MB MIPSEL_24KC * sh inpass 3 $DB**"
-echo -e "$DB **$G INSTALL PASSWALL STB AMLOGIC       * sh inpass 4 $DB**"
+echo -e "$DB **$G INSTALL PASSWALL ALL ARCH          * sh inpass 3 $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y      INSTALLER PASSWALL LITE BY ALKHANET         $DB**"
 echo -e "$DB ******************************************************"
