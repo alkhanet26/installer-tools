@@ -37,6 +37,7 @@ sed -i 's/option check_signature/# option check_signature/g' /etc/opkg.conf
 echo "src/gz custom_generic https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/generic" >> /etc/opkg/customfeeds.conf
 echo "src/gz custom_arch https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/$(cat /etc/os-release | grep OPENWRT_ARCH | awk -F '"' '{print $2}')" >> /etc/opkg/customfeeds.conf
 echo "src/gz custom_minimal https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/minimal" >> /etc/opkg/customfeeds.conf
+echo " " >> /etc/opkg/customfeeds.conf
 sleep 2
 else
 clear
