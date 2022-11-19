@@ -33,7 +33,10 @@ if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "Memasang Custom Repo"
 sleep 2
 clear
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/tree/main/plite/cfeed.sh" -O /tmp/cfeed.sh && chmod +x /tmp/cfeed.sh && cd /tmp/ && sh cfeed.sh && rm /tmp/cfeed.sh
+sed -i 's/option check_signature/# option check_signature/g' /etc/opkg.conf
+echo "src/gz custom_generic https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/generic" >> /etc/opkg/customfeeds.conf
+echo "src/gz custom_arch https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/$(cat /etc/os-release | grep OPENWRT_ARCH | awk -F '"' '{print $2}')" >> /etc/opkg/customfeeds.conf
+echo "src/gz custom_generic https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/minimal" >> /etc/opkg/customfeeds.conf
 sleep 2
 else
 clear
