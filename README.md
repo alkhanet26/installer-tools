@@ -2,7 +2,7 @@
 1. Cara pasang Installer passwall lite
    Paste Command ini di terminal
    ```
-   wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/installer-passwall-lite/installer" -O /tmp/installer && chmod +x /tmp/installer
+   wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/installer-passwall-lite/main/installer" -O /tmp/installer && chmod +x /tmp/installer
    ```
 2. Jalankan installer dengan ketik command dibawah
    ```
