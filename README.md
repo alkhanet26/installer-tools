@@ -2,7 +2,7 @@
 1. Cara pasang Installer passwall lite
    Paste Command ini di terminal
    ```
-   wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/installer-passwall-lite/main/inspass" -O /usr/bin/inspass && chmod chmod 777 /usr/bin/inpass
+   wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/installer-passwall-lite/main/inpass" -O /usr/bin/inpass && chmod chmod 777 /usr/bin/inpass
    ```
 2. Jalankan installer dengan ketik command dibawah
    ```
