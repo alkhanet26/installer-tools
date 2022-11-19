@@ -76,7 +76,6 @@ sleep 2
 clear
 opkg remove dnsmasq && opkg update && opkg install dnsmasq-full ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat luci-compat xray-core trojan-go
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/luci-app-passwall_lite_all.ipk" -O /tmp/luci-app-passwall_lite_all.ipk && chmod +x /tmp/luci-app-passwall_lite_all.ipk && cd /tmp && opkg update && opkg install *.ipk && rm /tmp/luci-app-passwall_lite_all.ipk
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/xray" -O /usr/bin/xray && chmod +x /usr/bin/xray
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/status.htm"  -O /usr/lib/lua/luci/view/passwall/global/status.htm && chmod +x /usr/lib/lua/luci/view/passwall/global/status.htm
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/passwall.lua" -O /usr/lib/lua/luci/controller/passwall.lua && chmod +x /usr/lib/lua/luci/controller/passwall.lua
 sleep 2
@@ -97,7 +96,6 @@ sleep 2
 clear
 opkg remove dnsmasq && opkg update && opkg install dnsmasq-full ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat luci-compat xray-core trojan-go
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/luci-app-passwall_lite_all.ipk" -O /tmp/luci-app-passwall_lite_all.ipk && chmod +x /tmp/luci-app-passwall_lite_all.ipk && cd /tmp && opkg update && opkg install *.ipk && rm /tmp/luci-app-passwall_lite_all.ipk
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/xray" -O /usr/bin/xray && chmod +x /usr/bin/xray
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/status.htm"  -O /usr/lib/lua/luci/view/passwall/global/status.htm && chmod +x /usr/lib/lua/luci/view/passwall/global/status.htm
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/passwall.lua" -O /usr/lib/lua/luci/controller/passwall.lua && chmod +x /usr/lib/lua/luci/controller/passwall.lua
 sleep 2
