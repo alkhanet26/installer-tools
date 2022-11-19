@@ -16,10 +16,10 @@
 **      PILIH ARCH SESUAI DEVICE YANG DIPAKAI!!!    **
 ******************************************************
 **         DAFTAR :                    *  PERINTAH :**
-**  SCRIPT REPO                        *  inpass 1  **
-**  INSTALL PASSWALL 16MB MIPSEL_24KC  *  inpass 2  **
-**  INSTALL PASSWALL >32MB MIPSEL_24KC *  inpass 3  **
-**  INSTALL PASSWALL STB AMLOGIC       *  inpass 4  **
+**  SCRIPT REPO                        * sh inpass 1**
+**  INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2**
+**  INSTALL PASSWALL >32MB MIPSEL_24KC * sh inpass 3**
+**  INSTALL PASSWALL STB AMLOGIC       * sh inpass 4**
 ******************************************************
 **        INSTALLER PASSWALL LITE BY ALKHANET       **
 ```
