@@ -8,9 +8,7 @@
    ```
    cd /tmp && installer
 3. Pilih dulu script repo untuk dengan mengetik ``in1``
-******************************************************
-******************************************************
-**                                                  **
+```
 **     SELAMAT DATANG ISNTALLER PASSWALL LITE       **
 **                                                  **
 ******************************************************
@@ -23,8 +21,7 @@
 **  INSTALL PASSWALL STB AMLOGIC       *     in4    **
 ******************************************************
 **        INSTALLER PASSWALL LITE BY ALKHANET       **
-******************************************************
-******************************************************
+```
 4. Kemudian pilih sesuai arch device yang di pakai contoh saya pakai untuk Mi4A GE rom 16MB pilih ``16MB MIPSEL_24KC``
    ```
    in2
