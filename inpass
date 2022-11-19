@@ -28,7 +28,7 @@ BLB='\e[3;36m' #LIGHTBLUE
 
 echo -e "$Y"
 repo_cust(){
-read -p "Install Passwall Lite, Anda Yakin? (y/n) : " an
+read -p "Akan memasang Custom Repo, Anda Yakin? (y/n) : " an
 if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "Memasang Custom Repo"
 sleep 2
@@ -53,7 +53,8 @@ if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "Mulai installasi Passwall lite"
 sleep 2
 clear
-opkg update && opkg install ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip
+opkg remove dnsmasq
+opkg update && opkg install dnsmasq-full ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/tree/main/plite/luci-app-passwall_4.51_all_.ipk" -O /tmp/luci-app-passwall_4.51_all_.ipk && chmod +x /tmp/luci-app-passwall_4.51_all_.ipk && cd /tmp && opkg update && opkg install *.ipk && rm /tmp/luci-app-passwall_4.51_all_.ipk
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/tree/main/plite/mipsel_24kc/1/usr/bin/xray" -O /usr/bin/xray && chmod +x /usr/bin/xray
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/tree/main/plite/mipsel_24kc/1/usr/status/status.htm"  -O /usr/lib/lua/luci/view/passwall/global/status.htm && chmod +x /usr/lib/lua/luci/view/passwall/global/status.htm
@@ -74,7 +75,8 @@ if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "Mulai installasi Passwall lite"
 sleep 2
 clear
-opkg update && opkg install ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip
+opkg remove dnsmasq
+opkg update && opkg install dnsmasq-full ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/tree/main/plite/luci-app-passwall_4.51_all_.ipk" -O /tmp/luci-app-passwall_4.51_all_.ipk && chmod +x /tmp/luci-app-passwall_4.51_all_.ipk && cd /tmp && opkg update && opkg install *.ipk && rm /tmp/luci-app-passwall_4.51_all_.ipk
 opkg update && opkg install xray-core trojan-go
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/tree/main/plite/mipsel_24kc/1/usr/status/status.htm"  -O /usr/lib/lua/luci/view/passwall/global/status.htm && chmod +x /usr/lib/lua/luci/view/passwall/global/status.htm
@@ -95,7 +97,8 @@ if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "Mulai installasi Passwall lite"
 sleep 2
 clear
-opkg update && opkg install ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip
+opkg remove dnsmasq
+opkg update && opkg install dnsmasq-full ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/tree/main/plite/luci-app-passwall_4.51_all_.ipk" -O /tmp/luci-app-passwall_4.51_all_.ipk && chmod +x /tmp/luci-app-passwall_4.51_all_.ipk && cd /tmp && opkg update && opkg install *.ipk && rm /tmp/luci-app-passwall_4.51_all_.ipk
 opkg update && opkg install xray-core trojan-go
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/tree/main/plite/aarch64_cortex-a53/usr/status/status.htm"  -O /usr/lib/lua/luci/view/passwall/global/status.htm && chmod +x /usr/lib/lua/luci/view/passwall/global/status.htm
