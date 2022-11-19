@@ -9,7 +9,7 @@
    cd /tmp && sh installer
 3. Pilih dulu script repo untuk dengan mengetik ``in1``
 ```
-**     SELAMAT DATANG ISNTALLER PASSWALL LITE       **
+**     SELAMAT DATANG INSTALLER PASSWALL LITE       **
 **                                                  **
 ******************************************************
 **      PILIH ARCH SESUAI DEVICE YANG DIPAKAI!!!    **
