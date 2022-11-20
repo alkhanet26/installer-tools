@@ -36,7 +36,6 @@ clear
 sed -i 's/option check_signature/# option check_signature/g' /etc/opkg.conf
 echo "src/gz custom_generic https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/generic" >> /etc/opkg/customfeeds.conf
 echo "src/gz custom_arch https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/$(cat /etc/os-release | grep OPENWRT_ARCH | awk -F '"' '{print $2}')" >> /etc/opkg/customfeeds.conf
-echo "src/gz custom_minimal https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/minimal" >> /etc/opkg/customfeeds.conf
 echo " " >> /etc/opkg/customfeeds.conf
 sleep 2
 else
@@ -54,12 +53,15 @@ if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "Mulai installasi Passwall lite"
 sleep 2
 clear
-opkg remove dnsmasq && opkg update && opkg install dnsmasq-full ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat luci-compat
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/luci-app-passwall_lite_all.ipk" -O /tmp/luci-app-passwall_lite_all.ipk && chmod +x /tmp/luci-app-passwall_lite_all.ipk && cd /tmp && opkg update && opkg install *.ipk && rm /tmp/luci-app-passwall_lite_all.ipk
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/xray" -O /usr/bin/xray && chmod +x /usr/bin/xray
+echo -e "Proses Installasi passwall lite"
+echo "src/gz custom_minimal https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/minimal" >> /etc/opkg/customfeeds.conf
+opkg remove dnsmasq && opkg update && opkg install ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip luci-app-passwall
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/xray-core.ipk" -O /tmp/xray-core.ipk && chmod +x /tmp/xray-core.ipk && cd /tmp && opkg install *.ipk
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/status.htm"  -O /usr/lib/lua/luci/view/passwall/global/status.htm && chmod +x /usr/lib/lua/luci/view/passwall/global/status.htm
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/passwall.lua" -O /usr/lib/lua/luci/controller/passwall.lua && chmod +x /usr/lib/lua/luci/controller/passwall.lua
 sleep 2
+echo -e "Proses Selesai"
+clear
 else
 clear
 echo -e "kembali ke halaman awal..."
@@ -75,11 +77,13 @@ if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "Mulai installasi Passwall lite"
 sleep 2
 clear
-opkg remove dnsmasq && opkg update && opkg install dnsmasq-full ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat luci-compat xray-core trojan-go
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/luci-app-passwall_lite_all.ipk" -O /tmp/luci-app-passwall_lite_all.ipk && chmod +x /tmp/luci-app-passwall_lite_all.ipk && cd /tmp && opkg update && opkg install *.ipk && rm /tmp/luci-app-passwall_lite_all.ipk
+echo -e "Proses Installasi Passwall Lite"
+opkg remove dnsmasq && opkg update && opkg install ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip luci-app-passwall xray-core trojan-go
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/status.htm"  -O /usr/lib/lua/luci/view/passwall/global/status.htm && chmod +x /usr/lib/lua/luci/view/passwall/global/status.htm
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/passwall.lua" -O /usr/lib/lua/luci/controller/passwall.lua && chmod +x /usr/lib/lua/luci/controller/passwall.lua
 sleep 2
+echo -e "Proses Selesai"
+clear
 else
 clear
 echo -e "kembali ke halaman awal..."
