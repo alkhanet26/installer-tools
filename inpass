@@ -54,15 +54,13 @@ echo -e "Mulai installasi Passwall lite"
 sleep 2
 clear
 echo -e "Proses Installasi passwall lite"
-logger "Proses Installasi passwall lite"
 echo "src/gz custom_minimal https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/minimal" >> /etc/opkg/customfeeds.conf
-opkg remove dnsmasq && opkg update && opkg install ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip luci-app-passwall
+opkg remove dnsmasq && opkg update && opkg install dnsmasq-full ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip luci-app-passwall
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/xray-core.ipk" -O /tmp/xray-core.ipk && chmod +x /tmp/xray-core.ipk && cd /tmp && opkg install *.ipk
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/status.htm"  -O /usr/lib/lua/luci/view/passwall/global/status.htm && chmod +x /usr/lib/lua/luci/view/passwall/global/status.htm
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/passwall.lua" -O /usr/lib/lua/luci/controller/passwall.lua && chmod +x /usr/lib/lua/luci/controller/passwall.lua
 sleep 2
 echo -e "Proses Selesai"
-logger "Proses Selesai"
 clear
 else
 clear
@@ -80,13 +78,11 @@ echo -e "Mulai installasi Passwall lite"
 sleep 2
 clear
 echo -e "Proses Installasi Passwall Lite"
-logger "Proses Installasi passwall lite"
-opkg remove dnsmasq && opkg update && opkg install ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip luci-app-passwall xray-core trojan-go
+opkg remove dnsmasq && opkg update && opkg install dnsmasq-full ipset ipt2socks iptables iptables-legacy iptables-mod-iprange iptables-mod-socket iptables-mod-tproxy kmod-ipt-nat coreutils coreutils-base64 coreutils-nohup curl dns2socks ip-full libuci-lua lua luci-compat luci-lib-jsonc microsocks resolveip tcping unzip luci-app-passwall xray-core trojan-go
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/status.htm"  -O /usr/lib/lua/luci/view/passwall/global/status.htm && chmod +x /usr/lib/lua/luci/view/passwall/global/status.htm
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/passwall.lua" -O /usr/lib/lua/luci/controller/passwall.lua && chmod +x /usr/lib/lua/luci/controller/passwall.lua
 sleep 2
 echo -e "Proses Selesai"
-logger "Proses Selesai"
 clear
 else
 clear
