@@ -101,6 +101,8 @@ sleep 2
 clear
 echo -e "Proses Installasi Openclash"
 opkg remove dnsmasq && opkg update && opkg install dnsmasq-full luci-app-openclash
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/developer.htm"  -O /usr/lib/lua/luci/view/openclash/developer.htm && chmod +x /usr/lib/lua/luci/view/openclash/developer.htm
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/myip.htm"  -O /usr/lib/lua/luci/view/openclash/myip.htm && chmod +x /usr/lib/lua/luci/view/openclash/myip.htm
 sleep 2
 echo -e "Proses Selesai"
 clear
