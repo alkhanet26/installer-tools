@@ -20,6 +20,7 @@
 **  INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2**
 **  INSTALL PASSWALL ALL ARCH          * sh inpass 3**
 **  INSTALL OPENCLASH ALL ARCH         * sh inpass 4**
+**  INSTALL TERMINAL                   * sh inpass 5**
 ******************************************************
 **        INSTALLER TOOLS BY ALKHANET       **
 ```
