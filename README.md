@@ -2,7 +2,7 @@
 1. Cara pasang Installer Tools
    Paste Command ini di terminal
    ```
-   wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/installer-toosl/main/inpass" -O /tmp/inpass && chmod 777 /tmp/inpass
+   wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/installer-tools/main/inpass" -O /tmp/inpass && chmod 777 /tmp/inpass
    ```
 2. Jalankan installer dengan ketik command dibawah
    ```
