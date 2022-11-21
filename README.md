@@ -43,7 +43,7 @@
        * Xray-core dengan pengurangan vless
        * Protocol vmess dan trojan-ws berajalan baik disini
    - ``Passwall All arch``
-       * Passwall untuk room diatas 64MB
+       * Passwall untuk rom diatas 64MB
        * Xray-core lates dan support semua protocol
        * untuk xray-core wss silahkan replace sendiri sesuai dengan ``ARC`` masing" device
 2. Tools ``Openclash`` bisa untuk semua ``ARC`` tetapi pertimbangkan juga space rom yang tersedia tools ini minimal rom 32MB
