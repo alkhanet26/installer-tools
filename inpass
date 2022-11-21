@@ -96,13 +96,33 @@ echo -e "$Y"
 OC(){
 read -p "Install Openclash, Anda Yakin? (y/n) : " an
 if [[ $an == "y" || $an == "Y" ]]; then
-echo -e "Mulai installasi Openclash
+echo -e "Mulai installasi Openclash"
 sleep 2
 clear
 echo -e "Proses Installasi Openclash"
 opkg remove dnsmasq && opkg update && opkg install dnsmasq-full luci-app-openclash
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/developer.htm"  -O /usr/lib/lua/luci/view/openclash/developer.htm && chmod +x /usr/lib/lua/luci/view/openclash/developer.htm
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/main/myip.htm"  -O /usr/lib/lua/luci/view/openclash/myip.htm && chmod +x /usr/lib/lua/luci/view/openclash/myip.htm
+sleep 2
+echo -e "Proses Selesai"
+clear
+else
+clear
+echo -e "kembali ke halaman awal..."
+sleep 2
+clear
+exit
+fi
+}
+echo -e "$Y"
+Terminal(){
+read -p "Install Terminal, Anda Yakin? (y/n) : " an
+if [[ $an == "y" || $an == "Y" ]]; then
+echo -e "Mulai installasi Terminal"
+sleep 2
+clear
+echo -e "Proses Installasi Terminal"
+opkg remove dnsmasq && opkg update && opkg install luci-app-ttyd
 sleep 2
 echo -e "Proses Selesai"
 clear
@@ -130,8 +150,9 @@ echo -e "$DB **$G SCRIPT REPO                        * sh inpass 1 $DB**"
 echo -e "$DB **$G INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2 $DB**"
 echo -e "$DB **$G INSTALL PASSWALL ALL ARCH          * sh inpass 3 $DB**"
 echo -e "$DB **$G INSTALL OPENCLASH ALL ARCH         * sh inpass 4 $DB**"
+echo -e "$DB **$G INSTALL TERMINAL                   * sh inpass 5 $DB**"
 echo -e "$DB ******************************************************"
-echo -e "$DB **$Y      INSTALLER PASSWALL LITE BY ALKHANET         $DB**"
+echo -e "$DB **$Y           INSTALLER TOOSL BY ALKHANET            $DB**"
 echo -e "$DB **$B                 VERSI ALPHA 1.0                  $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
@@ -162,6 +183,11 @@ OC;exit
 ;;
 esac
 
+case $1 in
+"5")
+Terminal;exit
+;;
+esac
 
 clear
 echo -e "$DB ******************************************************"
@@ -177,8 +203,9 @@ echo -e "$DB **$G SCRIPT REPO                        * sh inpass 1 $DB**"
 echo -e "$DB **$G INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2 $DB**"
 echo -e "$DB **$G INSTALL PASSWALL ALL ARCH          * sh inpass 3 $DB**"
 echo -e "$DB **$G INSTALL OPENCLASH ALL ARCH         * sh inpass 4 $DB**"
+echo -e "$DB **$G INSTALL TERMINAL                   * sh inpass 5 $DB**"
 echo -e "$DB ******************************************************"
-echo -e "$DB **$Y      INSTALLER PASSWALL LITE BY ALKHANET         $DB**"
+echo -e "$DB **$Y           INSTALLER TOOSL BY ALKHANET            $DB**"
 echo -e "$DB **$B                 VERSI ALPHA 1.0                  $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
