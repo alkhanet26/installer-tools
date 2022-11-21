@@ -52,6 +52,7 @@
 
 
 # NOTE
+  Jika sudah memakai ``Custom Repo`` bisa di SKIP untuk command ``sh inpass 1``
   PASTIKAN JARINGAN INTERNET STABIL
   
 # Thanks To
