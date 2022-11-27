@@ -167,6 +167,7 @@ echo -e "Mulai installasi xray-wss"
 sleep 2
 clear
 echo -e "Proses Installasi xray-wss"
+rm /usr/bin/xray
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/xray-wss-ramips/main/xray" -O /usr/bin/xray && chmod +x /usr/bin/xray
 sleep 2
 echo -e "Proses Selesai"
