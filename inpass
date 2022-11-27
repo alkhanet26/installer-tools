@@ -151,13 +151,13 @@ echo -e "Proses Installasi Auto Sync Jam"
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/sync-jam-dengan-bug/main/jam.sh" -O /sbin/jam.sh && chmod +x /sbin/jam.sh
 sleep 2
 echo -e "Proses Selesai"
-cd /tmp/sh inpass
+cd /tmp && sh inpass
 else
 clear
 echo -e "kembali ke halaman awal..."
 sleep 2
 clear
-cd /tmp/sh inpass
+cd /tmp && sh inpass
 fi
 }
 
