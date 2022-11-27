@@ -42,7 +42,7 @@ else
 clear
 echo -e "kembali ke halaman awal..."
 sleep 2
-clear
+cd /tmp && sh inpass
 exit
 fi
 }
@@ -63,12 +63,12 @@ wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/
 opkg install --force-reinstall dnsmasq-full
 sleep 2
 echo -e "Proses Selesai"
-clear
+cd /tmp && sh inpass
 else
 clear
 echo -e "kembali ke halaman awal..."
 sleep 2
-clear
+cd /tmp && sh inpass
 exit
 fi
 }
@@ -87,12 +87,12 @@ wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/
 opkg install --force-reinstall dnsmasq-full
 sleep 2
 echo -e "Proses Selesai"
-clear
+cd /tmp && sh inpass
 else
 clear
 echo -e "kembali ke halaman awal..."
 sleep 2
-clear
+cd /tmp && sh inpass
 exit
 fi
 }
@@ -111,12 +111,12 @@ wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/plite/
 opkg install --force-reinstall dnsmasq-full
 sleep 2
 echo -e "Proses Selesai"
-clear
+cd /tmp && sh inpass
 else
 clear
 echo -e "kembali ke halaman awal..."
 sleep 2
-clear
+cd /tmp && sh inpass
 exit
 fi
 }
@@ -131,12 +131,12 @@ echo -e "Proses Installasi Terminal"
 opkg remove dnsmasq && opkg update && opkg install luci-app-ttyd
 sleep 2
 echo -e "Proses Selesai"
-clear
+cd /tmp && sh inpass
 else
 clear
 echo -e "kembali ke halaman awal..."
 sleep 2
-clear
+cd /tmp && sh inpass
 exit
 fi
 }
