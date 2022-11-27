@@ -140,6 +140,27 @@ clear
 exit
 fi
 }
+echo -e "$Y"
+Sync_jam(){
+read -p "Install Auto Sync Jam, Anda Yakin? (y/n) : " an
+if [[ $an == "y" || $an == "Y" ]]; then
+echo -e "Mulai installasi Auto Sync Jam"
+sleep 2
+clear
+echo -e "Proses Installasi Auto Sync Jam"
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/sync-jam-dengan-bug/main/jam.sh" -O /sbin/jam.sh && chmod +x /sbin/jam.sh
+sleep 2
+echo "sh /sbin/jam.sh" >> /etc/rc.local
+echo -e "Proses Selesai"
+clear
+else
+clear
+echo -e "kembali ke halaman awal..."
+sleep 2
+clear
+cd /tmp/sh inpass
+fi
+}
 
 banner(){
 clear
@@ -157,6 +178,7 @@ echo -e "$DB **$G INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2 $DB**"
 echo -e "$DB **$G INSTALL PASSWALL ALL ARCH          * sh inpass 3 $DB**"
 echo -e "$DB **$G INSTALL OPENCLASH ALL ARCH         * sh inpass 4 $DB**"
 echo -e "$DB **$G INSTALL TERMINAL                   * sh inpass 5 $DB**"
+echo -e "$DB **$G INSTALL AUTO SYNC JAM              * sh inpass 6 $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y           INSTALLER TOOSL BY ALKHANET            $DB**"
 echo -e "$DB **$B                 VERSI ALPHA 1.0                  $DB**"
@@ -195,6 +217,12 @@ Terminal;exit
 ;;
 esac
 
+case $1 in
+"5")
+Sync_jam;exit
+;;
+esac
+
 clear
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
@@ -210,6 +238,7 @@ echo -e "$DB **$G INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2 $DB**"
 echo -e "$DB **$G INSTALL PASSWALL ALL ARCH          * sh inpass 3 $DB**"
 echo -e "$DB **$G INSTALL OPENCLASH ALL ARCH         * sh inpass 4 $DB**"
 echo -e "$DB **$G INSTALL TERMINAL                   * sh inpass 5 $DB**"
+echo -e "$DB **$G INSTALL AUTO SYNC JAM              * sh inpass 6 $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y           INSTALLER TOOSL BY ALKHANET            $DB**"
 echo -e "$DB **$B                 VERSI ALPHA 1.0                  $DB**"
