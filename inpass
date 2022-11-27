@@ -160,6 +160,25 @@ clear
 cd /tmp && sh inpass
 fi
 }
+ramips_wss(){
+read -p "Install xray-wss mipsel_24kc (ex:PL100), Anda Yakin? (y/n) : " an
+if [[ $an == "y" || $an == "Y" ]]; then
+echo -e "Mulai installasi xray-wss"
+sleep 2
+clear
+echo -e "Proses Installasi xray-wss"
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/xray-wss-ramips/main/xray" -O /usr/bin/xray && chmod +x /usr/bin/xray
+sleep 2
+echo -e "Proses Selesai"
+cd /tmp && sh inpass
+else
+clear
+echo -e "kembali ke halaman awal..."
+sleep 2
+clear
+cd /tmp && sh inpass
+fi
+}
 
 banner(){
 clear
@@ -174,6 +193,7 @@ echo -e "$DB ******************************************************"
 echo -e "$DB **$G        DAFTAR :                    *  PERINTAH : $DB**"
 echo -e "$DB **$G SCRIPT REPO                        * sh inpass 1 $DB**"
 echo -e "$DB **$G INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2 $DB**"
+echo -e "$DB **$G INSTALL XRAY WSS MIPSEL_24KC       * sh inpass ws$DB**"
 echo -e "$DB **$G INSTALL PASSWALL ALL ARCH          * sh inpass 3 $DB**"
 echo -e "$DB **$G INSTALL OPENCLASH ALL ARCH         * sh inpass 4 $DB**"
 echo -e "$DB **$G INSTALL TERMINAL                   * sh inpass 5 $DB**"
@@ -222,6 +242,12 @@ Sync_jam;exit
 ;;
 esac
 
+case $1 in
+"ws")
+ramips_wss;exit
+;;
+esac
+
 clear
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
@@ -234,6 +260,7 @@ echo -e "$DB ******************************************************"
 echo -e "$DB **$G        DAFTAR :                    *  PERINTAH : $DB**"
 echo -e "$DB **$G SCRIPT REPO                        * sh inpass 1 $DB**"
 echo -e "$DB **$G INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2 $DB**"
+echo -e "$DB **$G INSTALL XRAY WSS MIPSEL_24KC       * sh inpass ws$DB**"
 echo -e "$DB **$G INSTALL PASSWALL ALL ARCH          * sh inpass 3 $DB**"
 echo -e "$DB **$G INSTALL OPENCLASH ALL ARCH         * sh inpass 4 $DB**"
 echo -e "$DB **$G INSTALL TERMINAL                   * sh inpass 5 $DB**"
