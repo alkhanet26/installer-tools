@@ -152,6 +152,7 @@ wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/sync-j
 sleep 2
 echo "sh /sbin/jam.sh" >> /etc/rc.local
 echo -e "Proses Selesai"
+cd /tmp/sh inpass
 clear
 else
 clear
