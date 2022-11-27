@@ -150,10 +150,8 @@ clear
 echo -e "Proses Installasi Auto Sync Jam"
 wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/sync-jam-dengan-bug/main/jam.sh" -O /sbin/jam.sh && chmod +x /sbin/jam.sh
 sleep 2
-echo -e "Tambahkan sh /sbin/jam.sh di local startup"
 echo -e "Proses Selesai"
 cd /tmp/sh inpass
-clear
 else
 clear
 echo -e "kembali ke halaman awal..."
