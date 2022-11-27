@@ -10,7 +10,7 @@
    ```
 3. Pilih dulu script repo untuk dengan mengetik ``in1``
 ```
-**     SELAMAT DATANG INSTALLER TOOLS       **
+**         SELAMAT DATANG INSTALLER TOOLS           **
 **                                                  **
 ******************************************************
 **      PILIH ARCH SESUAI DEVICE YANG DIPAKAI!!!    **
