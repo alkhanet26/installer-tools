@@ -38,6 +38,7 @@ echo "src/gz custom_generic https://raw.githubusercontent.com/lrdrdn/my-opkg-rep
 echo "src/gz custom_arch https://raw.githubusercontent.com/lrdrdn/my-opkg-repo/main/$(cat /etc/os-release | grep OPENWRT_ARCH | awk -F '"' '{print $2}')" >> /etc/opkg/customfeeds.conf
 echo " " >> /etc/opkg/customfeeds.conf
 sleep 2
+cd /tmp && sh inpass
 else
 clear
 echo -e "kembali ke halaman awal..."
