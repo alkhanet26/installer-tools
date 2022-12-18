@@ -21,6 +21,7 @@
 **  INSTALL XRAY WSS MIPSEL_24KC       * sh inpass ws**
 **  INSTALL PASSWALL ALL ARCH          * sh inpass 3**
 **  INSTALL OPENCLASH ALL ARCH         * sh inpass 4**
+**  INSTALL CORE OC MIPSEL_24KC        * sh inpass cr**
 **  INSTALL TERMINAL                   * sh inpass 5**
 **  INSTALL AUTO SYNC JAM              * sh inpass 6**
 ******************************************************
