@@ -183,6 +183,7 @@ clear
 cd /tmp && sh inpass
 fi
 }
+echo -e "$Y"
 ramips_wss(){
 read -p "Install xray-wss mipsel_24kc (ex:PL100), Anda Yakin? (y/n) : " an
 if [[ $an == "y" || $an == "Y" ]]; then
@@ -203,6 +204,27 @@ clear
 cd /tmp && sh inpass
 fi
 }
+echo -e "$Y"
+cup(){
+read -p "Install Release Ram, Anda Yakin? (y/n) : " an
+if [[ $an == "y" || $an == "Y" ]]; then
+echo -e "Mulai installasi Release Ram"
+sleep 2
+clear
+echo -e "Proses Installasi Release Ram"
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/cup/main/release_ram.lua" -O /usr/lib/lua/luci/controller/release_ram.lua && chmod 777 /usr/lib/lua/luci/controller/release_ram.lua
+sleep 2
+echo -e "Proses Selesai"
+cd /tmp && sh inpass
+else
+clear
+echo -e "kembali ke halaman awal..."
+sleep 2
+clear
+cd /tmp && sh inpass
+fi
+}
+
 
 banner(){
 clear
@@ -223,6 +245,7 @@ echo -e "$DB **$G INSTALL OPENCLASH ALL ARCH         * sh inpass 4 $DB**"
 echo -e "$DB **$G INSTALL CORE MIPSEL_24KC           * sh inpass cr$DB**"
 echo -e "$DB **$G INSTALL TERMINAL                   * sh inpass 5 $DB**"
 echo -e "$DB **$G INSTALL AUTO SYNC JAM              * sh inpass 6 $DB**"
+echo -e "$DB **$G INSTALL AUTO RELEASE RAM           * sh inpass 7 $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y           INSTALLER TOOSL BY ALKHANET            $DB**"
 echo -e "$DB **$B                 VERSI ALPHA 1.0                  $DB**"
@@ -279,6 +302,12 @@ core;exit
 ;;
 esac
 
+case $1 in
+"cup")
+core;exit
+;;
+esac
+
 clear
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
@@ -297,6 +326,7 @@ echo -e "$DB **$G INSTALL OPENCLASH ALL ARCH         * sh inpass 4 $DB**"
 echo -e "$DB **$G INSTALL CORE MIPSEL_24KC           * sh inpass cr$DB**"
 echo -e "$DB **$G INSTALL TERMINAL                   * sh inpass 5 $DB**"
 echo -e "$DB **$G INSTALL AUTO SYNC JAM              * sh inpass 6 $DB**"
+echo -e "$DB **$G INSTALL AUTO RELEASE RAM           * sh inpass 7 $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y           INSTALLER TOOSL BY ALKHANET            $DB**"
 echo -e "$DB **$B                 VERSI ALPHA 1.0                  $DB**"
