@@ -212,7 +212,7 @@ echo -e "Mulai installasi Release Ram"
 sleep 2
 clear
 echo -e "Proses Installasi Release Ram"
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/cup/main/release_ram.lua" -O /usr/lib/lua/luci/controller/release_ram.lua && chmod 777 /usr/lib/lua/luci/controller/release_ram.lua
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/cup/main/release_ram.lua" -O /usr/lib/lua/luci/controller/release_ram.lua && chmod 644 /usr/lib/lua/luci/controller/release_ram.lua
 sleep 2
 echo -e "Proses Selesai"
 cd /tmp && sh inpass
