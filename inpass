@@ -224,6 +224,27 @@ clear
 cd /tmp && sh inpass
 fi
 }
+echo -e "$Y"
+vms(){
+read -p "Install vmess converter, Anda Yakin? (y/n) : " an
+if [[ $an == "y" || $an == "Y" ]]; then
+echo -e "Mulai installasi Vmess Converter"
+sleep 2
+clear
+echo -e "Proses Installasi Vmess Converter"
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/convms/main/inconvms" -O /tmp/iconvms && chmod +x /tmp/inconvms
+cd /tmp && sh inconvms
+sleep 2
+echo -e "Proses Selesai"
+cd /tmp && sh inpass
+else
+clear
+echo -e "kembali ke halaman awal..."
+sleep 2
+clear
+cd /tmp && sh inpass
+fi
+}
 
 
 banner(){
@@ -246,6 +267,7 @@ echo -e "$DB **$G INSTALL CORE MIPSEL_24KC           * sh inpass cr$DB**"
 echo -e "$DB **$G INSTALL TERMINAL                   * sh inpass 5 $DB**"
 echo -e "$DB **$G INSTALL AUTO SYNC JAM              * sh inpass 6 $DB**"
 echo -e "$DB **$G INSTALL AUTO RELEASE RAM           *sh inpass cup$DB**"
+echo -e "$DB **$G INSTALL AUTO VMESS CONVERTER       *sh inpass vms$DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y           INSTALLER TOOSL BY ALKHANET            $DB**"
 echo -e "$DB **$B                 VERSI ALPHA 1.0                  $DB**"
@@ -308,6 +330,12 @@ cup;exit
 ;;
 esac
 
+case $1 in
+"vms")
+vms;exit
+;;
+esac
+
 clear
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
@@ -327,6 +355,7 @@ echo -e "$DB **$G INSTALL CORE MIPSEL_24KC           * sh inpass cr$DB**"
 echo -e "$DB **$G INSTALL TERMINAL                   * sh inpass 5 $DB**"
 echo -e "$DB **$G INSTALL AUTO SYNC JAM              * sh inpass 6 $DB**"
 echo -e "$DB **$G INSTALL AUTO RELEASE RAM           *sh inpass cup$DB**"
+echo -e "$DB **$G INSTALL AUTO VMESS CONVERTER       *sh inpass vms$DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB **$Y           INSTALLER TOOSL BY ALKHANET            $DB**"
 echo -e "$DB **$B                 VERSI ALPHA 1.0                  $DB**"
