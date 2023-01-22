@@ -232,7 +232,7 @@ echo -e "Mulai installasi Vmess Converter"
 sleep 2
 clear
 echo -e "Proses Installasi Vmess Converter"
-wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/convms/main/inconvms" -O /tmp/iconvms && chmod +x /tmp/inconvms
+wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/convms/main/inconvms" -O /tmp/inconvms && chmod +x /tmp/inconvms
 cd /tmp && sh inconvms
 sleep 2
 echo -e "Proses Selesai"
