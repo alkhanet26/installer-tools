@@ -10,22 +10,30 @@
    ```
 3. Pilih dulu script repo untuk dengan mengetik ``in1``
 ```
-**         SELAMAT DATANG INSTALLER TOOLS           **
-**                                                  **
-******************************************************
-**      PILIH ARCH SESUAI DEVICE YANG DIPAKAI!!!    **
-******************************************************
-**         DAFTAR :                    *  PERINTAH :**
-**  SCRIPT REPO                        * sh inpass 1**
-**  INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2**
-**  INSTALL XRAY WSS MIPSEL_24KC       * sh inpass ws**
-**  INSTALL PASSWALL ALL ARCH          * sh inpass 3**
-**  INSTALL OPENCLASH ALL ARCH         * sh inpass 4**
-**  INSTALL CORE OC MIPSEL_24KC        * sh inpass cr**
-**  INSTALL TERMINAL                   * sh inpass 5**
-**  INSTALL AUTO SYNC JAM              * sh inpass 6**
-******************************************************
-**        INSTALLER TOOLS BY ALKHANET       **
+echo -e "$DB ******************************************************"
+echo -e "$DB ******************************************************"
+echo -e " **                                                  **"
+echo -e "$DB **$R       SELAMAT DATANG INSTALLER TOOLS       $DB**"
+echo -e " **                                                  **"
+echo -e "$DB ******************************************************"
+echo -e "$DB **$Y     PILIH ARCH SESUAI DEVICE YANG DIPAKAI!!!     $DB**"
+echo -e "$DB ******************************************************"
+echo -e "$DB **$G        DAFTAR :                    *  PERINTAH : $DB**"
+echo -e "$DB **$G SCRIPT REPO                        * sh inpass 1 $DB**"
+echo -e "$DB **$G INSTALL PASSWALL 16MB MIPSEL_24KC  * sh inpass 2 $DB**"
+echo -e "$DB **$G INSTALL XRAY WSS MIPSEL_24KC       * sh inpass ws$DB**"
+echo -e "$DB **$G INSTALL PASSWALL ALL ARCH          * sh inpass 3 $DB**"
+echo -e "$DB **$G INSTALL OPENCLASH ALL ARCH         * sh inpass 4 $DB**"
+echo -e "$DB **$G INSTALL CORE MIPSEL_24KC           * sh inpass cr$DB**"
+echo -e "$DB **$G INSTALL TERMINAL                   * sh inpass 5 $DB**"
+echo -e "$DB **$G INSTALL AUTO SYNC JAM              * sh inpass 6 $DB**"
+echo -e "$DB **$G INSTALL AUTO RELEASE RAM           *sh inpass cup$DB**"
+echo -e "$DB **$G INSTALL AUTO VMESS CONVERTER       *sh inpass vms$DB**"
+echo -e "$DB ******************************************************"
+echo -e "$DB **$Y           INSTALLER TOOSL BY ALKHANET            $DB**"
+echo -e "$DB **$B                 VERSI ALPHA 1.0                  $DB**"
+echo -e "$DB ******************************************************"
+echo -e "$DB ******************************************************"
 ```
 4. Pasang dulu ``Custom Repo`` untuk menginstall paket pendukung ``TOOLS`` yang mau dipasang
    ```
