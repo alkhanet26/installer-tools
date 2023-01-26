@@ -68,3 +68,6 @@ echo -e "$DB ******************************************************"
 # Thanks To
 - Script AIN [Vito Harhari](https://github.com/vitoharhari)
 - Custom Repo [Nugroho](https://github.com/lrdrdn) 
+
+# Support Me
+- [Beli Kopi](https://saweria.co/alkhanet)
