@@ -8,7 +8,6 @@
    ```
    cd /tmp && sh inpass
    ```
-3. Pilih dulu script repo untuk dengan mengetik ``in1``
 ```
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
@@ -35,11 +34,11 @@ echo -e "$DB **$B                 VERSI ALPHA 1.0                  $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
 ```
-4. Pasang dulu ``Custom Repo`` untuk menginstall paket pendukung ``TOOLS`` yang mau dipasang
+3. Pasang dulu ``Custom Repo`` untuk menginstall paket pendukung ``TOOLS`` yang mau dipasang
    ```
    sh inpass 1
    ```
-5. Kemudian pilih sesuai arch device yang di pakai contoh saya pakai untuk Mi4A GE rom 16MB pilih ``INSTALL PASSWALL 16MB MIPSEL_24KC`` 
+4. Kemudian pilih sesuai arch device yang di pakai contoh saya pakai untuk Mi4A GE rom 16MB pilih ``INSTALL PASSWALL 16MB MIPSEL_24KC`` 
    ```
    sh inpass 2
    ```
