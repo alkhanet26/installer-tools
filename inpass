@@ -122,7 +122,7 @@ exit
 fi
 }
 echo -e "$Y"
-cr(){
+core(){
 read -p "Install Core untuk device Ramips, Anda Yakin? (y/n) : " an
 if [[ $an == "y" || $an == "Y" ]]; then
 echo -e "Mulai installasi core oc (ramips)"
