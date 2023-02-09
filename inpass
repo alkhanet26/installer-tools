@@ -151,7 +151,7 @@ echo -e "Mulai installasi Terminal"
 sleep 2
 clear
 echo -e "Proses Installasi Terminal"
-opkg remove dnsmasq && opkg update && opkg install luci-app-ttyd
+opkg update && opkg install luci-app-ttyd
 sleep 2
 echo -e "Proses Selesai"
 cd /tmp && sh inpass
