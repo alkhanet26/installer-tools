@@ -2,12 +2,9 @@
 1. Cara pasang Installer Tools
    Paste Command ini di terminal
    ```
-   wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/installer-tools/main/inpass" -O /tmp/inpass && chmod 777 /tmp/inpass
+   wget --no-check-certificate "https://raw.githubusercontent.com/alkhanet26/installer-tools/main/inpass" -O /tmp/inpass && chmod 777 /tmp/inpass && cd /tmp && sh inpass
    ```
-2. Jalankan installer dengan ketik command dibawah
-   ```
-   cd /tmp && sh inpass
-   ```
+   
 ```
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
@@ -34,15 +31,15 @@ echo -e "$DB **$B                 VERSI ALPHA 1.0                  $DB**"
 echo -e "$DB ******************************************************"
 echo -e "$DB ******************************************************"
 ```
-3. Pasang dulu ``Custom Repo`` untuk menginstall paket pendukung ``TOOLS`` yang mau dipasang
+2. Pasang dulu ``Custom Repo`` untuk menginstall paket pendukung ``TOOLS`` yang mau dipasang
    ```
    sh inpass 1
    ```
-4. Kemudian pilih sesuai arch device yang di pakai contoh saya pakai untuk Mi4A GE rom 16MB pilih ``INSTALL PASSWALL 16MB MIPSEL_24KC`` 
+3. Kemudian pilih sesuai arch device yang di pakai contoh saya pakai untuk Mi4A GE rom 16MB pilih ``INSTALL PASSWALL 16MB MIPSEL_24KC`` 
    ```
    sh inpass 2
    ```
-5. Tunggu sampai Proses installasi selesai
+4. Tunggu sampai Proses installasi selesai
 
 # INFORMATION
   - Installer Tools ini dibuat untuk mempermudah dalam penginstallasian ``Tools`` dalam firmware ``Openwrt``
